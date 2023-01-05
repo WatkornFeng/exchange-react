@@ -17,7 +17,7 @@ export default function PageDetailPrice({ price }) {
         Authorization: "Bearer " + token,
       },
     };
-    const url = "http://localhost:3001/authen";
+    const url = "https://ill-puce-lion-yoke.cyclic.app/authen";
     fetch(url, requestOptions)
       .then((Response) => Response.json())
       .then((data) => {

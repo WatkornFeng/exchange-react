@@ -43,7 +43,7 @@ export default function ModalBuy({ detail }) {
           buy,
         }),
       };
-      const url = "http://localhost:3001/buy";
+      const url = "https://ill-puce-lion-yoke.cyclic.app/buy";
       fetch(url, requestOptions)
         .then((Response) => Response.json())
         .then((data) => {

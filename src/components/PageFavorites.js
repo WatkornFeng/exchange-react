@@ -29,7 +29,7 @@ export default function PageFavorites({ price }) {
         Authorization: "Bearer " + token,
       },
     };
-    const url = "http://localhost:3001/authen";
+    const url = "https://ill-puce-lion-yoke.cyclic.app/authen";
     fetch(url, requestOptions)
       .then((Response) => Response.json())
       .then((data) => {
@@ -51,7 +51,7 @@ export default function PageFavorites({ price }) {
       },
       body: JSON.stringify({ email }),
     };
-    const url = "http://localhost:3001/port";
+    const url = "https://ill-puce-lion-yoke.cyclic.app/port";
     fetch(url, requestOptions)
       .then((Response) => Response.json())
       .then((data) => setfav(data));

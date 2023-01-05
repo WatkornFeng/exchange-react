@@ -16,7 +16,7 @@ export default function PageLogin() {
       },
       body: JSON.stringify({ username: username, password: password }),
     };
-    const url = "http://localhost:3001/login";
+    const url = "https://ill-puce-lion-yoke.cyclic.app/login";
     fetch(url, requestOptions)
       .then((Response) => Response.json())
       .then((data) => {

@@ -12,7 +12,7 @@ export default function ModalClose({ idDelete }) {
         idDelete,
       }),
     };
-    const url = "http://localhost:3001/delete";
+    const url = "https://ill-puce-lion-yoke.cyclic.app/delete";
     fetch(url, requestOptions)
       .then((Response) => Response.json())
       .then((data) => {

@@ -16,7 +16,7 @@ export default function PageCreateAcc() {
       },
       body: JSON.stringify({ email: email, pass: pass }),
     };
-    const url = "http://localhost:3001/register";
+    const url = "https://ill-puce-lion-yoke.cyclic.app/register";
     fetch(url, requestOptions)
       .then((Response) => Response.json())
       .then((data) => {

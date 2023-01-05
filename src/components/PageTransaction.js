@@ -17,7 +17,7 @@ export default function PageTransaction() {
         Authorization: "Bearer " + token,
       },
     };
-    const url = "http://localhost:3001/authen";
+    const url = "https://ill-puce-lion-yoke.cyclic.app/authen";
     fetch(url, requestOptions)
       .then((Response) => Response.json())
       .then((data) => {
@@ -40,7 +40,7 @@ export default function PageTransaction() {
       },
       body: JSON.stringify({ email }),
     };
-    const url = "http://localhost:3001/transaction";
+    const url = "https://ill-puce-lion-yoke.cyclic.app/transaction";
     fetch(url, requestOptions)
       .then((Response) => Response.json())
       .then((data) => setTransaction(data));
@@ -56,7 +56,7 @@ export default function PageTransaction() {
       },
       body: JSON.stringify({ email }),
     };
-    const url = "http://localhost:3001/result";
+    const url = "https://ill-puce-lion-yoke.cyclic.app/result";
     fetch(url, requestOptions)
       .then((Response) => Response.json())
       .then((data) => setResult(data));
@@ -127,17 +127,3 @@ export default function PageTransaction() {
     </>
   );
 }
-/*
-<div className="sum">
-Total Profit/Loss :
-{result[0]?.result > 0 ? (
-  <div style={{ color: "green" }}>
-    {result?.[0]?.result?.toLocaleString()}
-  </div>
-) : (
-  <div style={{ color: "red" }}>
-    {result?.[0]?.result?.toLocaleString()}
-  </div>
-)}{" "}
-BATH
-</div>*/

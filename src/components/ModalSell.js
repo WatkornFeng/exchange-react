@@ -46,7 +46,7 @@ export default function ModalSell({ sell }) {
           side,
         }),
       };
-      const url = "http://localhost:3001/sell";
+      const url = "https://ill-puce-lion-yoke.cyclic.app/sell";
       fetch(url, requestOptions)
         .then((Response) => Response.json())
         .then((data) => {
