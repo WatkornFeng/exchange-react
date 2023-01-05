@@ -1,0 +1,14 @@
+.trans {
+  height: 100vh;
+  background-color: black;
+}
+.sum {
+  display: flex;
+  position: sticky;
+  background-color: darkgray;
+  border-radius: 1;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  text-indent: 1rem;
+}

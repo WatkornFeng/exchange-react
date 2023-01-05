@@ -1,0 +1,189 @@
+.black {
+  display: flex;
+  height: 100vh;
+  background-color: black;
+}
+.detail {
+  display: flex;
+  height: 100vh;
+  background-color: black;
+  justify-content: center;
+}
+.item-box {
+  height: 85vh;
+  width: 80vw;
+  background-color: rgb(2, 71, 2);
+  margin: 5vw 10vh;
+  font-size: 2rem;
+  color: rgb(147, 219, 31);
+  border: 2px solid rgb(147, 219, 31);
+  border-radius: 10px;
+}
+.item {
+  text-align: center;
+  width: 80vw;
+  margin-bottom: 2vh;
+}
+
+.items-2 {
+  text-align: center;
+  width: 60vw;
+  height: 41vh;
+  margin: auto;
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid #daa520;
+}
+
+.item-buy {
+  display: flex;
+  justify-content: space-evenly;
+  color: rgb(80, 213, 236);
+  margin-bottom: 5vh;
+  margin-top: 2vh;
+}
+.item-sell {
+  display: flex;
+  justify-content: space-evenly;
+  color: red;
+}
+.item-back {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4vh;
+  margin-right: 2vw;
+}
+.btn-buy {
+  color: rgb(80, 213, 236);
+  background-color: black;
+  border-radius: 10px;
+  border: 2px solid rgb(80, 213, 236);
+  width: 15vw;
+}
+.btn-buy:hover {
+  color: black;
+  background-color: rgb(80, 213, 236);
+}
+.btn-sell {
+  color: red;
+  border-radius: 10px;
+  background-color: black;
+  border: 2px solid red;
+  width: 15vw;
+}
+.btn-sell:hover {
+  color: black;
+  background-color: red;
+}
+.btn-back {
+  background-color: black;
+  color: #daa520;
+  border: 2px solid #daa520;
+  width: 15vw;
+}
+.btn-back:hover {
+  color: black;
+  background-color: #daa520;
+}
+
+@media screen and (max-width: 1200px) {
+  .item-box {
+    width: 95vw;
+    height: 77vh;
+    margin: 5vw 5vh;
+    font-size: 1.95rem;
+  }
+  .item {
+    width: 90vw;
+  }
+  .items-2 {
+    width: 70vw;
+    height: 38vh;
+  }
+  .btn-back {
+    width: 20vw;
+  }
+}
+@media screen and (max-width: 900px) {
+  .item-box {
+    font-size: 1.6rem;
+    height: 60vh;
+  }
+  .items-2 {
+    height: 30vh;
+  }
+  .btn-back {
+    width: 20vw;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .item-box {
+    width: 80vw;
+    height: 60vh;
+    margin: 4vw 5vh;
+    font-size: 1.1rem;
+  }
+  .item {
+    width: 80vw;
+  }
+  .items-2 {
+    flex-wrap: wrap;
+    width: 70vw;
+    height: 32vh;
+  }
+  .item-buy {
+    display: block;
+    flex-direction: column;
+  }
+  .btn-buy {
+    width: 50vw;
+  }
+  .item-sell {
+    display: block;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .btn-sell {
+    width: 50vw;
+  }
+  .btn-back {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  .item-box {
+    height: 65vh;
+    font-size: 0.9rem;
+  }
+  .items-2 {
+    height: 35vh;
+  }
+  .btn-buy {
+    width: 60vw;
+  }
+  .btn-sell {
+    width: 60vw;
+  }
+  .btn-back {
+    width: 30vw;
+  }
+}
+@media screen and (max-width: 320px) {
+  .item-box {
+    width: 100vw;
+    height: 85vh;
+    margin: 5vw 5vh;
+    font-size: 0.95rem;
+  }
+  .item {
+    width: 95vw;
+  }
+  .items-2 {
+    width: 90vw;
+    height: 45vh;
+  }
+  .btn-back {
+    width: 50vw;
+  }
+}

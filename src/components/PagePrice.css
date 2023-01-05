@@ -1,0 +1,135 @@
+.time {
+  display: flex;
+  justify-content: center;
+  color: rgb(147, 219, 31);
+  background-color: rgba(83, 78, 78, 0.842);
+  height: 30px;
+}
+.time p {
+  font-size: 1.25rem;
+  color: rgb(147, 219, 31);
+}
+@media screen and (max-width: 1184px) {
+  .time p {
+    margin-right: -1000px;
+    position: relative;
+    animation: mymove 15s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes mymove {
+    from {
+      right: -100px;
+    }
+    to {
+      right: 1000px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .time {
+    height: 30px;
+  }
+  .time p {
+    position: relative;
+    margin-right: -1000px;
+    animation: textmove 20s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes textmove {
+    from {
+      right: -100px;
+    }
+    to {
+      right: 1000px;
+    }
+  }
+}
+/****head of price content**/
+#head {
+  background-color: black;
+  color: rgb(147, 219, 31);
+  padding: 15px;
+}
+
+#head h2,
+h6 {
+  text-align: center;
+  margin: auto;
+  width: 90%;
+}
+
+@media screen and (max-width: 600px) {
+  #head h2,
+  h3 {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #head h2,
+  h3 {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+
+/*****Price-content*******/
+
+.price {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: black;
+}
+
+.price .flex-price {
+  text-align: center;
+  margin: 5px;
+  width: 25vw;
+  padding: 20px;
+  background-color: black;
+  border: 2px solid rgb(147, 219, 31);
+  color: rgb(147, 219, 31);
+  font-size: 2.5rem;
+}
+
+.price a {
+  text-decoration: none;
+}
+.price .flex-price:hover {
+  color: black;
+  background-color: rgb(147, 219, 31);
+  border: 2px solid rgb(147, 219, 31);
+}
+
+.price .flex-price h5 {
+  padding-top: 20px;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1095px) {
+  .price .flex-price {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .price .flex-price {
+    width: 80vw;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .price .flex-price {
+    width: 80vw;
+    padding: 5px;
+  }
+  .price .flex-price h5 {
+    padding-top: 20px;
+    font-size: 1.5rem;
+  }
+  .price .flex-price i {
+    font-size: 1.5rem;
+  }
+}

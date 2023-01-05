@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@600&family=Rubik+Dirt&display=swap");
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+}
+nav #logo {
+  width: fit-content;
+  font-family: "Rubik Dirt", cursive;
+  background-image: linear-gradient(90deg, #e5b80b, rgb(147, 219, 31));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 1.5vw;
+  font-size: 2.35rem;
+}
+
+#navlist {
+  margin: 0;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 60vw;
+}
+#navlist li {
+  list-style: none;
+  width: 100%;
+}
+#navlist li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 114px;
+  font-size: 1.75rem;
+  transition: 0.3s ease-in-out;
+  color: rgb(147, 219, 31);
+}
+#navlist li a:hover {
+  color: black;
+  background-color: rgb(147, 219, 31);
+}
+#navlist .activated {
+  color: black;
+  background-color: rgb(147, 219, 31);
+}
+
+#navlist button {
+  font-size: 1.5rem;
+  width: 10vw;
+  background-color: black;
+  color: rgb(147, 219, 31);
+  border: 1px solid rgb(147, 219, 31);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  margin-left: 0.5rem;
+}
+#avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #65f5ee;
+}
+#navlist .notlog {
+  display: none;
+}
+#navlist button:hover {
+  background-color: rgb(147, 219, 31);
+  color: black;
+  border: 1px solid black;
+  transition: 0.5s;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+#mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #navlist li a {
+    font-size: 1.2rem;
+  }
+  #navlist button {
+    font-size: 1.2rem;
+    width: 10vw;
+  }
+}
+/*Devices that has maximum width 720px has mobile icon*/
+@media screen and (max-width: 720px) {
+  nav {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  #mobile {
+    display: flex;
+    margin: 1rem;
+  }
+
+  #mobile i {
+    color: rgb(147, 219, 31);
+    font-size: 2rem;
+  }
+
+  nav #logo {
+    font-size: 1.5rem;
+    width: 50vw;
+  }
+
+  #navlist {
+    display: none;
+  }
+  #navlist.active {
+    display: block;
+    flex-direction: column;
+    background-color: rgb(2, 0, 0);
+    width: 100vw;
+    padding: 0;
+  }
+
+  #navlist li a {
+    font-size: 1.5rem;
+    height: 50px;
+    border-bottom: 1px groove rgb(171, 206, 115);
+  }
+
+  #navlist button {
+    opacity: 1;
+    margin: 1rem;
+    width: 90vw;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  nav #logo {
+    font-size: 1.5rem;
+    width: 70vw;
+  }
+  #navlist button {
+    font-size: 1.5rem;
+    width: 90vw;
+  }
+}

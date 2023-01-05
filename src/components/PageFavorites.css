@@ -1,0 +1,68 @@
+.fav {
+  height: 100vh;
+  background-color: black;
+  padding-top: 5vh;
+}
+.foot {
+  display: inline-flex;
+}
+.btn-sell-fav {
+  font-size: 1.5rem;
+  color: red;
+  border-radius: 10px;
+  background-color: black;
+  border: 2px solid red;
+  width: 10vw;
+  margin-right: 1vw;
+}
+.btn-close-fav {
+  font-size: 1.5rem;
+  color: orange;
+  border-radius: 10px;
+  background-color: black;
+  border: 2px solid orange;
+  width: 10vw;
+  margin-right: 1vw;
+}
+.btn-close-fav:hover {
+  color: black;
+  background-color: orange;
+}
+.btn-sell-fav:hover {
+  color: black;
+  background-color: red;
+}
+#close {
+  display: flex;
+  width: fit-content;
+  color: red;
+  font-size: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .btn-sell-fav {
+    width: 10vw;
+  }
+  .btn-close-fav {
+    width: 10vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .btn-sell-fav {
+    width: 15vw;
+  }
+  .btn-close-fav {
+    width: 15vw;
+  }
+}
+@media screen and (max-width: 700px) {
+  #close {
+    font-size: 2rem;
+  }
+  .btn-sell-fav {
+    width: 30vw;
+  }
+  .btn-close-fav {
+    width: 30vw;
+  }
+}
