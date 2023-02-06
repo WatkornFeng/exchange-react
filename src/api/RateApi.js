@@ -13,9 +13,7 @@ const yesterday = new Date();
 export default async function rateApi(price) {
   if (price !== "") {
     while (true) {
-      console.log("ds" + yesterday);
       yesterday.setDate(yesterday.getDate() - 1);
-      console.log(yesterday);
       function padTo2Digits(num) {
         return num.toString().padStart(2, "0");
       }

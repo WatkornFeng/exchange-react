@@ -3,11 +3,10 @@ import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 export default function Header() {
   const [navClick, setNavClick] = useState(false);
+  const [status, setStatus] = useState("notloggin");
   const handleClickMobile = () => {
     setNavClick(!navClick);
   };
-  const [status, setStatus] = useState("notloggin");
-
   const email = localStorage.getItem("email");
   useEffect(() => {
     const email = localStorage.getItem("email");
